@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ConfirmaOPage } from '../confirma-o/confirma-o';
 import { PacienteEscolhidoPage } from '../paciente-escolhido/paciente-escolhido';
-import { SeleODeExercCiosPage } from '../sele-ode-exerc-cios/sele-ode-exerc-cios';
 import { HelphysPage } from '../helphys/helphys';
 import { ExercCioPage } from '../exerc-cio/exerc-cio';
 import { DVidaPage } from '../d-vida/d-vida';
