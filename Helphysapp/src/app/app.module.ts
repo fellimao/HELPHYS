@@ -15,6 +15,7 @@ import { ConfirmaOPage } from '../pages/confirma-o/confirma-o';
 import { TelaPacientePage } from '../pages/tela-paciente/tela-paciente';
 import { PacienteEscolhidoPage } from '../pages/paciente-escolhido/paciente-escolhido';
 import { DatasPage } from '../pages/datas/datas';
+import {CadastroPage} from '../pages/cadastro/cadastro';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -33,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DVidaPage,
     SeleODeExercCiosPage,
     ConfirmaOPage,
+    CadastroPage,
     TelaPacientePage,
     PacienteEscolhidoPage,
     DatasPage
@@ -56,6 +58,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ConfirmaOPage,
     TelaPacientePage,
     PacienteEscolhidoPage,
+    CadastroPage,
     DatasPage
   ],
   providers: [

@@ -10,7 +10,7 @@ import { CrDitosPage } from '../pages/cr-ditos/cr-ditos';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { ExercCioPage } from '../pages/exerc-cio/exerc-cio';
 import { DVidaPage } from '../pages/d-vida/d-vida';
-
+import { CadastroPage} from '../pages/cadastro/cadastro';
 
 import { HelphysPage } from '../pages/helphys/helphys';
 

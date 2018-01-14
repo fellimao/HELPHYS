@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ExercCioPage } from '../exerc-cio/exerc-cio';
 import { DVidaPage } from '../d-vida/d-vida';
+import { CadastroPage } from '../cadastro/cadastro';
 
 @Component({
   selector: 'page-helphys',
@@ -17,5 +18,9 @@ export class HelphysPage {
   }goToDVida(params){
     if (!params) params = {};
     this.navCtrl.push(DVidaPage);
+  }
+  goToCadastro(params){
+    if (!params) params = {};
+    this.navCtrl.push(CadastroPage);
   }
 }
