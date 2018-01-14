@@ -16,7 +16,7 @@ import { TelaPacientePage } from '../pages/tela-paciente/tela-paciente';
 import { PacienteEscolhidoPage } from '../pages/paciente-escolhido/paciente-escolhido';
 import { DatasPage } from '../pages/datas/datas';
 import {CadastroPage} from '../pages/cadastro/cadastro';
-
+import {LoginPage} from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,6 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CadastroPage,
     TelaPacientePage,
     PacienteEscolhidoPage,
+    LoginPage,
     DatasPage
   ],
   imports: [
@@ -59,6 +60,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TelaPacientePage,
     PacienteEscolhidoPage,
     CadastroPage,
+    LoginPage,
     DatasPage
   ],
   providers: [
