@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CadastroPage } from '../cadastro/cadastro';
 import { HelphysPage } from '../helphys/helphys';
+import {Storage} from'@ionic/storage';
 
 @Component({
   selector: 'page-login',
@@ -9,14 +10,15 @@ import { HelphysPage } from '../helphys/helphys';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController) {
-  }
-  goToCadastro(params){
+  
+  constructor(private storage:Storage){}
+  /*goToCadastro(params){
     if (!params) params = {};
-    this.navCtrl.push(CadastroPage);
+    this.storage.push(CadastroPage);
   }
   goToHelphys(params){
     if (!params) params = {};
-    this.navCtrl.push(HelphysPage);
-  }
+    this.storage.push(HelphysPage);
+  }*/
+  
 }
