@@ -18,6 +18,8 @@ import { DatasPage } from '../pages/datas/datas';
 import {CadastroPage} from '../pages/cadastro/cadastro';
 import {LoginPage} from '../pages/login/login';
 
+import { CalendarModule } from 'ionic3-calendar';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -45,6 +47,7 @@ import {IonicStorageModule} from '@ionic/storage';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    CalendarModule,
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
