@@ -18,6 +18,8 @@ import { DatasPage } from '../pages/datas/datas';
 import {CadastroPage} from '../pages/cadastro/cadastro';
 import {LoginPage} from '../pages/login/login';
 
+import { CalendarModule } from 'ionic3-calendar';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import * as firebase from 'firebase';
@@ -62,11 +64,16 @@ firebase.initializeApp(config);
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+<<<<<<< HEAD
     IonicStorageModule.forRoot({name: '_mydb'}),
     HttpModule,
     AngularFireModule.initializeApp(config),
     AngularFireAuthModule
     
+=======
+    CalendarModule,
+    IonicStorageModule.forRoot()
+>>>>>>> origin/master
   ],
   bootstrap: [IonicApp],
   entryComponents: [
