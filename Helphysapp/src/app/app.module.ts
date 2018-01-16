@@ -20,8 +20,25 @@ import {LoginPage} from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import * as firebase from 'firebase';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from 'angularfire2';
 
 import {IonicStorageModule} from '@ionic/storage';
+import { AuthProvider } from '../providers/auth/auth';
+import { HttpModule } from '@angular/http';
+
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyBMGPgXjOuRp7owlyuE5LHf14w3ZKZqz_g",
+  authDomain: "helphys-teste.firebaseapp.com",
+  databaseURL: "https://helphys-teste.firebaseio.com",
+  projectId: "helphys-teste",
+  storageBucket: "helphys-teste.appspot.com",
+  messagingSenderId: "530901301923"
+};
+firebase.initializeApp(config);
 
 @NgModule({
   declarations: [
@@ -45,7 +62,11 @@ import {IonicStorageModule} from '@ionic/storage';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot({name: '_mydb'}),
+    HttpModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireAuthModule
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -69,7 +90,8 @@ import {IonicStorageModule} from '@ionic/storage';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthProvider
   ]
 })
 export class AppModule {}
