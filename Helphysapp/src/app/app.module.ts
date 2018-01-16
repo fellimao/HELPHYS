@@ -22,25 +22,8 @@ import { CalendarModule } from 'ionic3-calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import * as firebase from 'firebase';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { AngularFireModule } from 'angularfire2';
 
 import {IonicStorageModule} from '@ionic/storage';
-import { AuthProvider } from '../providers/auth/auth';
-import { HttpModule } from '@angular/http';
-
-
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyBMGPgXjOuRp7owlyuE5LHf14w3ZKZqz_g",
-  authDomain: "helphys-teste.firebaseapp.com",
-  databaseURL: "https://helphys-teste.firebaseio.com",
-  projectId: "helphys-teste",
-  storageBucket: "helphys-teste.appspot.com",
-  messagingSenderId: "530901301923"
-};
-firebase.initializeApp(config);
 
 @NgModule({
   declarations: [
@@ -65,6 +48,7 @@ firebase.initializeApp(config);
     BrowserModule,
     IonicModule.forRoot(MyApp),
 <<<<<<< HEAD
+<<<<<<< HEAD
     IonicStorageModule.forRoot({name: '_mydb'}),
     HttpModule,
     AngularFireModule.initializeApp(config),
@@ -74,6 +58,9 @@ firebase.initializeApp(config);
     CalendarModule,
     IonicStorageModule.forRoot()
 >>>>>>> origin/master
+=======
+    IonicStorageModule.forRoot()
+>>>>>>> parent of becb242... Login
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -97,8 +84,7 @@ firebase.initializeApp(config);
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
