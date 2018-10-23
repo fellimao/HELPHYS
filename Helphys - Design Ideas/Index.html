@@ -1,0 +1,53 @@
+<html lang="pt/br">
+    <head>
+        <title>Insira o titulo aqui</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontes -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <!--Ícone da página -->
+        <link rel="icon" href="img/Logo.png">
+        <!-- Conexão com o bootstrap/javascript/jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/MainStyle.css" rel="stylesheet">
+    </head>
+    <body>
+        <?php
+            session_start();
+            //zerando variavel erro
+            $_SESSION['erro'] = "";    
+        ?>
+        
+        
+        
+        <!-- 
+            Barra de navegação
+            fixed-top -> Deixa a barra presa no topo
+            nav-pills -> Adiciona o efeito de "pilula"
+            nav-dropdown -> Adiciona o efeito de pilha
+        -->      
+        <h1>Esse website terá como função testar nossas ideias e verem se são praticas antes de usar no aplicativo<h1>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                       
+        <!-- Logotipo de preferencia em PNG -->
+          <a class="navbar-brand" href="#">
+            <img src="" alt="Logo" style="width:80px;">
+            </a>
+            
+            <!-- Botão para celular -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbarreduzida">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        </nav>
+        
+
+               
+        <!-- Rodapé final do site-->
+        <div class="jumbotron text-center">
+          <p>Website e imagem pertencente ao HELPHYS - Todos os direitos reservados - 2018</p>
+        </div>
+
+    </body>
+</html>
